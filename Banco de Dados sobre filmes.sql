@@ -11,7 +11,12 @@ select name, winner from movies WHERE name LIKE "%Amy Adams%"
 select film, winner, year_ceremony from movies where film like "%Toy Story%";
 
 5- Quem tem mais Oscars: a categoria "Melhor Ator" ou "Melhor Filme"?
-select count(*) from movies where category like "%FILM%" and winner = "1";
-select count(*) from movies where category like "%ACTOR%" and winner = "1";
+SELECT film as category, count() as winner
+FROM movies
+WHERE category LIKE '%FILM%' and winner = 1
+UNION
+SELECT "actor" as category, count() as winner
+FROM movies
+WHERE category LIKE '%ACTOR%' and winner = 1;
 
 6- O primeiro Oscar para melhor Atriz foi para quem? Em que ano?
