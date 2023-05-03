@@ -1,33 +1,17 @@
--- Exemplo de como criar um banco
-/*Exemplo*/
--- varchar: caracter variavel
--- int: numero inteiro
--- use crase quando ficar em azul, NAME ficou em azul pois é um comando do SQL
+1- Quantas vezes Natalie Portman foi indicada ao Oscar?
+select name from movies WHERE name LIKE "%NAtalhie Portman%";
 
--- -> PRIMARY KEY único é obrigatorio
--- not null (Não vazio/item Obrigatório)
--- unique (Item unico)
--- default (Se o campo estiver vazio ele preencherá automaticamente com o valor informado ao lado)
+2- Quantos Oscars Natalie Portman ganhou?
+select name, winner from movies WHERE name LIKE "%Natalie Portman%" and winner = 1;
 
--- CREATE database filmes;
+3- Amy Adams já ganhou algum Oscar?
+select name, winner from movies WHERE name LIKE "%Amy Adams%"
 
-create database IF NOT EXISTS filmes;
+4- A série de filmes Toy Story ganhou um Oscar em quais anos?
+select film, winner, year_ceremony from movies where film like "%Toy Story%";
 
-use filmes;
+5- Quem tem mais Oscars: a categoria "Melhor Ator" ou "Melhor Filme"?
+select count(*) from movies where category like "%FILM%" and winner = "1";
+select count(*) from movies where category like "%ACTOR%" and winner = "1";
 
--- drop table IF EXISTS obras; -- APAGAR A TABELA SE ELA EXISTIR
-
-create table if not exists obras(
-id_obras int(11) primary key auto_increment,
-`film` varchar(255) not null,
-`name` varchar(255) unique,
-`award` varchar(255) not null,
-year_film int(4) default 2058
-);
-
-insert into obras (`film`, `name`, `award`, year_film)
-values ("PROA", "Guilherme Camargo", "Melhor Pessoa", 2023);
-
--- ( * ) server para selecionar todos os elementos
-
-select * from obras;
+6- O primeiro Oscar para melhor Atriz foi para quem? Em que ano?
