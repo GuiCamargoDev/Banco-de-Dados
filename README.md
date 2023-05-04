@@ -41,9 +41,17 @@ INSERT INTO movies (year_film, year_ceremony, ceremony, category, `name`, film, 
 INSERT INTO movies (year_film, year_ceremony, ceremony, category, `name`, film, winner) VALUES ('2010', '2023', '94', 'FILM', 'Olivia Wilde', 'Tron - O Legado', 'True');
 
 12- Crie uma nova categoria de premiação. Qualquer prêmio que você queira dar. Agora vamos dar esses prêmios aos filmes que você cadastrou na questão acima.
-alter table `movies_data`.`movies` add column `good` varchar(11);
+update movies set category = "bom" where category = "FILM";
 
 13- Qual foi o primeiro ano a ter um prêmio do Oscar?
 select year_ceremony from movies;
 
 14 - Pensando no ano em que você nasceu: Qual foi o Oscar de melhor filme, Melhor Atriz e Melhor Diretor?
+select film, category, year_ceremony, ceremony from movies where year_ceremony = "2002";  A Beautiful Mind
+select * from movies where year_ceremony = "2002" and winner = "TRUE"; Halle Berry
+select * from movies where year_ceremony = "2002" and winner = "TRUE"; Ron Howard
+
+15- Agora procure 7 atrizes que não sejam americanas, europeias ou brasileiras.  Vamos cadastrá-los no nosso banco, mas eles ainda não ganharam o Oscar. Só foram nomeados.
+
+
+16- Agora vamos falar da sua vida. Me diga o nome de uma pessoa que você admira e o que ela fez na sua vida. Agora me diz: Quê prêmio essa pessoa merece? 
