@@ -1,3 +1,7 @@
+<h1>Oscar</h1>
+
+<h4>Olá, neste repositório se encontra a minha atividade de banco de dados, usei comandos básicos para puxar algumas informações.</h4>
+
 1- Quantas vezes Natalie Portman foi indicada ao Oscar?
 select name from movies WHERE name LIKE "%NAtalhie Portman%";
 
