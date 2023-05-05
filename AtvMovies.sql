@@ -28,9 +28,7 @@ CREATE TABLE IF not EXISTS movies (
     winner VARCHAR(10)
 );
 
-INSERT INTO movies (year_film, year_ceremony, ceremony, category, `name`, film, winner) VALUES ('2022', '2023', '94', 'FILM', 'Sam Worthing', 'Avatar 2', 'True');
-INSERT INTO movies (year_film, year_ceremony, ceremony, category, `name`, film, winner) VALUES ('2005', '2023', '94', 'FILM', 'Daniel Radcliffe', 'Harry Potter e o Cálice de Fogo', 'True');
-INSERT INTO movies (year_film, year_ceremony, ceremony, category, `name`, film, winner) VALUES ('2010', '2023', '94', 'FILM', 'Olivia Wilde', 'Tron - O Legado', 'True');
+
 INSERT INTO movies (year_film, year_ceremony, ceremony, category, `name`, film, winner) VALUES ('1927', '1928', '1', 'ACTOR', 'Richard Barthelmess', 'The Noose', 'False');
 INSERT INTO movies (year_film, year_ceremony, ceremony, category, `name`, film, winner) VALUES ('1927', '1928', '1', 'ACTOR', 'Emil Jannings', 'The Last Command', 'True');
 INSERT INTO movies (year_film, year_ceremony, ceremony, category, `name`, film, winner) VALUES ('1927', '1928', '1', 'ACTRESS', 'Louise Dresser', 'A Ship Comes In', 'False');
@@ -10426,7 +10424,13 @@ INSERT INTO movies (year_film, year_ceremony, ceremony, category, `name`, film, 
 INSERT INTO movies (year_film, year_ceremony, ceremony, category, `name`, film, winner) VALUES ('2019', '2020', '92', 'HONORARY AWARD', 'David Lynch', '', 'True');
 INSERT INTO movies (year_film, year_ceremony, ceremony, category, `name`, film, winner) VALUES ('2019', '2020', '92', 'HONORARY AWARD', 'Wes Studi', '', 'True');
 INSERT INTO movies (year_film, year_ceremony, ceremony, category, `name`, film, winner) VALUES ('2019', '2020', '92', 'HONORARY AWARD', 'Lina Wertmüller', '', 'True');
-
-INSERT INTO movies (year_film, year_ceremony, ceremony, category, `name`, film, winner) VALUES ('2023', '2023', '93', 'Avatar 2', 'Guilherme Camargo', '', 'True');
-INSERT INTO movies (year_film, year_ceremony, ceremony, category, `name`, film, winner) VALUES ('2023', '2023', '93', 'O Leão e a Cobra', 'Guilherme Camargo', '', 'True');
-INSERT INTO movies (year_film, year_ceremony, ceremony, category, `name`, film, winner) VALUES ('2023', '2023', '93', 'A Cobra e o Leão: O Retorno', 'Guilherme Camargo', '', 'True');
+INSERT INTO movies (year_film, year_ceremony, ceremony, category, `name`, film, winner) VALUES ('2022', '2023', '94', 'FILM', 'Sam Worthing', 'Avatar: O Caminho Das Águas', 'True');
+INSERT INTO movies (year_film, year_ceremony, ceremony, category, `name`, film, winner) VALUES ('2005', '2023', '94', 'FILM', 'Daniel Radcliffe', 'Harry Potter e o Cálice de Fogo', 'True');
+INSERT INTO movies (year_film, year_ceremony, ceremony, category, `name`, film, winner) VALUES ('2010', '2023', '94', 'FILM', 'Olivia Wilde', 'Tron - O Legado', 'True');
+INSERT INTO movies (year_film, year_ceremony, ceremony, category, `name`, film, winner) VALUES ('2009', '2010', '1', 'ACTOR', 'Jamie Chung', 'Dragonball Evolution', 'False');
+INSERT INTO movies (year_film, year_ceremony, ceremony, category, `name`, film, winner) VALUES ('2021', '2021', '1', 'ACTOR', 'Jessica Henwick', 'Matrix Resurrections', 'False');
+INSERT INTO movies (year_film, year_ceremony, ceremony, category, `name`, film, winner) VALUES ('2001', '2002', '1', 'ACTOR', 'fatoumata diawara', 'Sia, The Dream of the Python', 'False');
+INSERT INTO movies (year_film, year_ceremony, ceremony, category, `name`, film, winner) VALUES ('2003', '2004', '1', 'ACTOR', 'charlize theron Chan', 'Monster - Desejo Assassino', 'False');
+INSERT INTO movies (year_film, year_ceremony, ceremony, category, `name`, film, winner) VALUES ('2010', '2011', '1', 'ACTOR', 'Zhao Tao', 'Memorias de Xangai', 'False');
+INSERT INTO movies (year_film, year_ceremony, ceremony, category, `name`, film, winner) VALUES ('1988', '1988', '1', 'ACTOR', 'Dolly Rathebe', 'Mapantsula', 'False');
+INSERT INTO movies (year_film, year_ceremony, ceremony, category, `name`, film, winner) VALUES ('2019', '2019', '1', 'ACTOR', 'Jackson Yee', 'Dias Melhores', 'False');
