@@ -1,19 +1,23 @@
 <h1>Oscar</h1>
 
 <h4>Olá, neste repositório se encontra a minha atividade de banco de dados, usei comandos básicos para puxar algumas informações.</h4>
-<h5>Acima estão os arquivos de banco que usei para fazer essa atividade</h5>
+<h4>Acima estão os arquivos de banco que usei para fazer essa atividade</h4>
 
 <h6>1- Quantas vezes Natalie Portman foi indicada ao Oscar?</h6>
-select name from movies WHERE name LIKE "%NAtalhie Portman%";
+<p>Natalie Portman foi indicada 3 vezes ao Oscar</p>
+<p>select name from movies WHERE name LIKE "%Natalie Portman%";</p>
 
-2- Quantos Oscars Natalie Portman ganhou?
-select name, winner from movies WHERE name LIKE "%Natalie Portman%" and winner = 1;
+<h6>2- Quantos Oscars Natalie Portman ganhou?</h6>
+<p>Natalie Portoman ganhou 1 oscar</p> 
+<p>select name, winner from movies WHERE name LIKE "%Natalie Portman%" and winner = 1;</p>
 
-3- Amy Adams já ganhou algum Oscar?
-select name, winner from movies WHERE name LIKE "%Amy Adams%"
+<h6>3- Amy Adams já ganhou algum Oscar?</h6>
+<p>Amy Adams nunca ganhou o Oscar</p>
+<p>select name, winner from movies WHERE name LIKE "%Amy Adams%"</p>
 
-4- A série de filmes Toy Story ganhou um Oscar em quais anos?
-select film, winner, year_ceremony from movies WHERE film LIKE "%Toy Story%";
+<h6>4- A série de filmes Toy Story ganhou um Oscar em quais anos?</h6>
+<p>A série Toy Story ganhou dos premios 
+<p>select film, winner, year_ceremony from movies WHERE film LIKE "%Toy Story%" and winner = "TRUE";</p>
 
 5- Quem tem mais Oscars: a categoria "Melhor Ator" ou "Melhor Filme"?
 SELECT "Best Film" as category, count(*) as winner
