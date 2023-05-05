@@ -3,21 +3,21 @@
 <h4>Olá, neste repositório se encontra a minha atividade de banco de dados, usei comandos básicos para puxar algumas informações.</h4>
 <h4>Acima estão os arquivos de banco que usei para fazer essa atividade</h4>
 
-<h6>1- Quantas vezes Natalie Portman foi indicada ao Oscar?</h6>
-<p>Natalie Portman foi indicada 3 vezes ao Oscar</p>
-<p>select name from movies WHERE name LIKE "%Natalie Portman%";</p>
+<p>1- Quantas vezes Natalie Portman foi indicada ao Oscar?</p>
+<h6>Natalie Portman foi indicada 3 vezes ao Oscar</h6>
+<h6>select name from movies WHERE name LIKE "%Natalie Portman%";</h6>
 
-<h6>2- Quantos Oscars Natalie Portman ganhou?</h6>
-<p>Natalie Portoman ganhou 1 oscar</p> 
-<p>select name, winner from movies WHERE name LIKE "%Natalie Portman%" and winner = 1;</p>
+<p>2- Quantos Oscars Natalie Portman ganhou?</p>
+<h6>Natalie Portoman ganhou 1 oscar</h6> 
+<h6>select name, winner from movies WHERE name LIKE "%Natalie Portman%" and winner = 1;</h6>
 
-<h6>3- Amy Adams já ganhou algum Oscar?</h6>
-<p>Amy Adams nunca ganhou o Oscar</p>
-<p>select name, winner from movies WHERE name LIKE "%Amy Adams%"</p>
+<p>3- Amy Adams já ganhou algum Oscar?</p>
+<h6>Amy Adams nunca ganhou o Oscar</h6>
+<h6>select name, winner from movies WHERE name LIKE "%Amy Adams%"</h6>
 
-<h6>4- A série de filmes Toy Story ganhou um Oscar em quais anos?</h6>
-<p>A série Toy Story ganhou dos premios 
-<p>select film, winner, year_ceremony from movies WHERE film LIKE "%Toy Story%" and winner = "TRUE";</p>
+<p>4- A série de filmes Toy Story ganhou um Oscar em quais anos?</p>
+<h6>A série Toy Story ganhou dois premios em 2011 e um premio em 2020</h6>
+<h6>select film, winner, year_ceremony from movies WHERE film LIKE "%Toy Story%" and winner = "TRUE";</h6>
 
 5- Quem tem mais Oscars: a categoria "Melhor Ator" ou "Melhor Filme"?
 SELECT "Best Film" as category, count(*) as winner
